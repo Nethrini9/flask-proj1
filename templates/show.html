@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+
+<body>
+<center>
+    <h2>EMPLOYEE DETAILS</h2>
+<table border="1">
+    <tr>
+       <th> EMP NAME </th>
+        <th> EMP PHNO </th>
+        <th> PSD </th>
+    </tr>
+
+ {% for i in e %}
+
+    <tr>
+       <th> {{ i.ename }} </th>
+        <th> {{ i.mobile }} </th>
+        <th> {{ i.psd }} </th>
+
+    </tr>
+
+    {% endfor %}
+</table>
+<a href="home">home</a>
+</center>
+</body>
+</html>
